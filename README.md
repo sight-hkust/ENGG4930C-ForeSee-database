@@ -4,14 +4,14 @@ HKUST Spring 2020, Hong Kong Eye Health Tracking Application
 
 ## Introduction
 
-ForeSee is an application for tracking of eye health metrics such as myopia. This repository contains the structure of database for the project. Database can be created in any MySQL environment but in order to be compatible with the [ForeSee API](https://github.com/DoguD/ENGG4930C-ForeSee-api) it needs to be created in an [AWS RDS](https://aws.amazon.com/rds/).
+ForeSee is an application for tracking of eye health metrics such as myopia. This repository contains the structure of database for the project. Database can be created in any MySQL environment but in order to be compatible with the [ForeSee API](https://github.com/sight-hkust/ENGG4930C-ForeSee-api) it needs to be created in an [AWS RDS](https://aws.amazon.com/rds/).
 
 ## Getting Started
 
 1. Create an AWS MySQL RDS instance. [Documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_CreateDBInstance.html)
-2. After creating the RDS instance take note of **Endpoint**, **Database Username**, **Database Password**, and **Database Name** (*innodb* by default). You need to write them in the [`rdsconfig.py` file of the API](https://github.com/DoguD/ENGG4930C-ForeSee-api#getting-started).
+2. After creating the RDS instance take note of **Endpoint**, **Database Username**, **Database Password**, and **Database Name** (*innodb* by default). You need to write them in the [`rdsconfig.py` file of the API](https://github.com/sight-hkust/ENGG4930C-ForeSee-api#getting-started).
 3. Connect to your database using a software like [MySQL Workbench](https://www.mysql.com/products/workbench/) or [DataGrip](https://www.jetbrains.com/datagrip/).
-4. Run the SQL [create_tables.sql](https://github.com/DoguD/ENGG4930C-ForeSee-database/blob/master/create_tables.sql)
+4. Run the SQL [create_tables.sql](https://github.com/sight-hkust/ENGG4930C-ForeSee-database/blob/master/create_tables.sql)
 ```sql
 create table fs__data
 (
